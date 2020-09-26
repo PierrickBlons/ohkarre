@@ -12,6 +12,9 @@ jobs:
         with:
           persist-credentials: false 
 
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
