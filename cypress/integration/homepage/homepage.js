@@ -2,7 +2,6 @@ import { Given, Then } from 'cypress-cucumber-preprocessor/steps';
 
 Given('I open the homepage', () => {
     cy.visit('./public/index.html');
-
 });
 
 
