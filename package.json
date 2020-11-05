@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec \"**/*.feature\""
+    "test": "cypress run --spec \"**/*.feature\"",
+    "clean": "bsb -clean-world", 
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^7.0.0-rc.0",
     "cypress": "^5.2.0",
-    "cypress-cucumber-preprocessor": "^2.5.5"
+    "cypress-cucumber-preprocessor": "^2.5.5",
+    "bs-platform": "*"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true

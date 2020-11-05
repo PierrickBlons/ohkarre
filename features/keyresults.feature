@@ -3,7 +3,7 @@ Feature: Managing Objective Key Results
     Background:
         Given existing users
            | id | login   |
-           | 1  | Georges |  |
+           | 1  | Georges |
            | 2  | Lucas   |
 
         Given existing objectives for existing users
